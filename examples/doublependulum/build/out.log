@@ -1,0 +1,26 @@
+MODEL: ControlDoublePendulum
+
+ANALYSES (0)
+
+BODIES (4)
+body[0] = ground (mass: 0) (inertia: 1 0 0 0 1 0 0 0 1)
+body[1] = firstCylinder (mass: 0.1) (inertia: 0.00210583 0 0 0 4.5e-05 0 0 0 0.00210583)
+body[2] = secondCylinder (mass: 0.1) (inertia: 0.00210583 0 0 0 4.5e-05 0 0 0 0.00210583)
+body[3] = block (mass: 20) (inertia: 0.533333 0 0 0 0.533333 0 0 0 0.533333)
+
+ACTUATORS (2)
+actuator[0] = firstJointActuator
+actuator[1] = secondJointActuator
+numStates = 4
+numCoordinates = 2
+numSpeeds = 2
+numActuators = 2
+numBodies = 4
+numConstraints = 0
+numProbes = 0
+
+STATES (4)
+y[0] = q1
+y[1] = q2
+y[2] = q1_u
+y[3] = q2_u

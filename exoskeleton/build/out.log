@@ -1,0 +1,73 @@
+Loaded model leg6dof9musc from file skeleton.osim
+MODEL: exoskeleton
+
+ANALYSES (0)
+
+BODIES (12)
+body[0] = ground (mass: 0) (inertia: 0 0 0 0 0 0 0 0 0)
+body[1] = pelvis (mass: 10.7538) (inertia: 0.1027 0 0 0 0.0870155 0 0 0 0.0578439)
+body[2] = femur_r (mass: 8.54927) (inertia: 0.169564 0 0 0 0.0444489 0 0 0 0.178809)
+body[3] = tibia_r (mass: 4.67404) (inertia: 0.0802351 0 0 0 0.00811903 0 0 0 0.0813495)
+body[4] = patella_r (mass: 0.0919138) (inertia: 0.00110296 0 0 0 0.00110296 0 0 0 0.00110296)
+body[5] = talus_r (mass: 0.126069) (inertia: 0.00202166 0 0 0 0.00202166 0 0 0 0.00202166)
+body[6] = calcn_r (mass: 1.07225) (inertia: 0.00090462 0 0 0 0.00361848 0 0 0 0.00361848)
+body[7] = toes_r (mass: 0.186142) (inertia: 0 0 0 0 0 0 0 0 0.00090462)
+body[8] = rFoot (mass: 0.510668) (inertia: 0.550966 -0.0412213 0.00386544 -0.0412213 0.0131665 -0.055311 0.00386544 -0.055311 0.550966)
+body[9] = rShin (mass: 0.195673) (inertia: 0.105895 0.00366464 0.000900894 0.00366464 0.00494945 -0.0211266 0.000900894 -0.0211266 0.105895)
+body[10] = rThigh (mass: 0.21383) (inertia: 0.023845 -0.00531542 0.0036718 -0.00531542 0.00844538 -0.00821055 0.0036718 -0.00821055 0.023845)
+body[11] = exoHip (mass: 0.853088) (inertia: 0.022039 0.00420974 0.000204592 0.00420974 0.022039 -7.73982e-06 0.000204592 -7.73982e-06 0.0134412)
+
+ACTUATORS (12)
+actuator[0] = bifemlh_r
+actuator[1] = bifemsh_r
+actuator[2] = glut_max2_r
+actuator[3] = psoas_r
+actuator[4] = rect_fem_r
+actuator[5] = vas_int_r
+actuator[6] = med_gas_r
+actuator[7] = soleus_r
+actuator[8] = tib_ant_r
+actuator[9] = exoHipActuator_r
+actuator[10] = exoKneeActuator_r
+actuator[11] = exoAnkleActuator_r
+numStates = 33
+numCoordinates = 7
+numSpeeds = 7
+numActuators = 12
+numBodies = 12
+numConstraints = 1
+numProbes = 0
+
+STATES (32)
+y[0] = hip_flexion_r
+y[1] = knee_angle_r
+y[2] = knee_angle_pat_r
+y[3] = ankle_angle_r
+y[4] = ankleJoint_r_coord
+y[5] = kneeJoint_r_coord
+y[6] = exoHipJoint_coord
+y[7] = hip_flexion_r_u
+y[8] = knee_angle_r_u
+y[9] = knee_angle_pat_r_u
+y[10] = ankle_angle_r_u
+y[11] = ankleJoint_r_coord_u
+y[12] = kneeJoint_r_coord_u
+y[13] = exoHipJoint_coord_u
+y[14] = bifemlh_r.activation
+y[15] = bifemlh_r.fiber_length
+y[16] = bifemsh_r.activation
+y[17] = bifemsh_r.fiber_length
+y[18] = glut_max2_r.activation
+y[19] = glut_max2_r.fiber_length
+y[20] = psoas_r.activation
+y[21] = psoas_r.fiber_length
+y[22] = rect_fem_r.activation
+y[23] = rect_fem_r.fiber_length
+y[24] = vas_int_r.activation
+y[25] = vas_int_r.fiber_length
+y[26] = med_gas_r.activation
+y[27] = med_gas_r.fiber_length
+y[28] = soleus_r.activation
+y[29] = soleus_r.fiber_length
+y[30] = tib_ant_r.activation
+y[31] = tib_ant_r.fiber_length

@@ -1,0 +1,3 @@
+/home/didix21/OpenSim/UbuntuWorkspace/exoskeleton/build/CMakeFiles/edit_cache.dir
+/home/didix21/OpenSim/UbuntuWorkspace/exoskeleton/build/CMakeFiles/rebuild_cache.dir
+/home/didix21/OpenSim/UbuntuWorkspace/exoskeleton/build/CMakeFiles/exoskeleton.dir

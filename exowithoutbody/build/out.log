@@ -1,0 +1,30 @@
+MODEL: exowithoutbody
+
+ANALYSES (0)
+
+BODIES (5)
+body[0] = ground (mass: 0) (inertia: 1 0 0 0 1 0 0 0 1)
+body[1] = exoHip (mass: 0.853088) (inertia: 0.652412 -0.052409 0.00451596 -0.052409 0.0153823 -0.0601928 0.00451596 -0.0601928 0.652412)
+body[2] = rThigh (mass: 0.21383) (inertia: 0.0878838 0.00388124 0.0010525 0.00388124 0.00578239 -0.0191521 0.0010525 -0.0191521 0.0878838)
+body[3] = rShin (mass: 0.195673) (inertia: 0.105895 0.00366464 0.000900894 0.00366464 0.00494945 -0.0211266 0.000900894 -0.0211266 0.105895)
+body[4] = rFoot (mass: 0.510668) (inertia: 0.550966 -0.0412213 0.00386544 -0.0412213 0.0131665 -0.055311 0.00386544 -0.055311 0.550966)
+
+ACTUATORS (3)
+actuator[0] = exoHipActuator_r
+actuator[1] = exoKneeActuator_r
+actuator[2] = exoAnkleActuator_r
+numStates = 6
+numCoordinates = 3
+numSpeeds = 3
+numActuators = 3
+numBodies = 5
+numConstraints = 0
+numProbes = 0
+
+STATES (6)
+y[0] = exoHipJoint_coord
+y[1] = kneeJoint_r_coord
+y[2] = ankleJoint_r_coord
+y[3] = exoHipJoint_coord_u
+y[4] = kneeJoint_r_coord_u
+y[5] = ankleJoint_r_coord_u

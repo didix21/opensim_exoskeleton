@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_80" class="java.beans.XMLDecoder">
+ <object class="org.opensim.utils.ApplicationState" id="ApplicationState0">
+  <void property="stateObjects">
+   <void method="put">
+    <string>MotionsDB</string>
+    <object class="org.opensim.view.motions.MotionsDBDescriptor"/>
+   </void>
+   <void method="put">
+    <string>ViewDB</string>
+    <object class="org.opensim.view.pub.ViewDBDescriptor" id="ViewDBDescriptor0">
+     <void property="cameraAttributes">
+      <void method="add">
+       <array class="double" length="13">
+        <void index="0">
+         <double>6.272394470568646</double>
+        </void>
+        <void index="1">
+         <double>1.1923191422070187</double>
+        </void>
+        <void index="2">
+         <double>1.0048895490664815</double>
+        </void>
+        <void index="3">
+         <double>-0.17537995458840883</double>
+        </void>
+        <void index="4">
+         <double>-0.45864313456509276</double>
+        </void>
+        <void index="5">
+         <double>0.0074251413345337025</double>
+        </void>
+        <void index="6">
+         <double>-0.1793327716786224</double>
+        </void>
+        <void index="7">
+         <double>0.9164689349856244</double>
+        </void>
+        <void index="8">
+         <double>-0.35766527397607234</double>
+        </void>
+        <void index="9">
+         <double>0.9580486153674801</double>
+        </void>
+        <void index="10">
+         <double>0.24530977962166176</double>
+        </void>
+        <void index="11">
+         <double>0.1482091853240755</double>
+        </void>
+        <void index="12">
+         <double>9.577912788181079</double>
+        </void>
+       </array>
+      </void>
+     </void>
+     <void property="offsetsList">
+      <void method="add">
+       <array class="double" length="3"/>
+      </void>
+     </void>
+     <void property="viewNames">
+      <void method="add">
+       <string>View0</string>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>OpenSimDB</string>
+    <object class="org.opensim.view.pub.OpenSimDBDescriptor" id="OpenSimDBDescriptor0">
+     <void property="currentModelIndex">
+      <int>0</int>
+     </void>
+     <void property="fileNames">
+      <void method="add">
+       <string>C:\Users\didi\Documents\OpenSim\UbuntuWorkspace\exoskeleton\results\exoskeleton.osim</string>
+      </void>
+     </void>
+     <void property="modelIds">
+      <void method="add">
+       <int>0</int>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>PluginsDB</string>
+    <object class="org.opensim.view.pub.PluginsDB"/>
+   </void>
+   <void method="put">
+    <string>CoordinateViewer</string>
+    <object class="org.opensim.coordinateviewer.CoordinateViewerDescriptor" id="CoordinateViewerDescriptor0">
+     <void property="poses">
+      <void method="add">
+       <object class="org.opensim.view.ModelPose" id="ModelPose0">
+        <void property="coordinateNames">
+         <void method="add">
+          <string>pelvisGround_coord_0</string>
+         </void>
+         <void method="add">
+          <string>hip_flexion_r</string>
+         </void>
+         <void method="add">
+          <string>knee_angle_r</string>
+         </void>
+         <void method="add">
+          <string>knee_angle_pat_r</string>
+         </void>
+         <void method="add">
+          <string>ankle_angle_r</string>
+         </void>
+         <void method="add">
+          <string>ankJoint_r_coordinate</string>
+         </void>
+         <void method="add">
+          <string>ortAnkle_r_coordinate</string>
+         </void>
+         <void method="add">
+          <string>ortHip_r_coordinate</string>
+         </void>
+         <void method="add">
+          <string>ortHip_coordinate</string>
+         </void>
+        </void>
+        <void property="coordinateValues">
+         <void method="add">
+          <double>-2.4175875888330646E-40</double>
+         </void>
+         <void method="add">
+          <double>-0.17539922010804185</double>
+         </void>
+         <void method="add">
+          <double>-0.646976440256636</double>
+         </void>
+         <void method="add">
+          <double>-0.646976440256636</double>
+         </void>
+         <void method="add">
+          <double>0.09735134</double>
+         </void>
+         <void method="add">
+          <double>-2.2218747041540507E-37</double>
+         </void>
+         <void method="add">
+          <double>0.03389354606804592</double>
+         </void>
+         <void method="add">
+          <double>0.6269564258957189</double>
+         </void>
+         <void method="add">
+          <double>-0.25417304697359805</double>
+         </void>
+        </void>
+        <void property="poseName">
+         <string>exoskeleton</string>
+        </void>
+       </object>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
