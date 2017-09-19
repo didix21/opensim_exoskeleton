@@ -54,45 +54,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/source
+CMAKE_SOURCE_DIR = /home/didix21/GitHub/opensim_exoskeleton/exowithoutbody/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/build
+CMAKE_BINARY_DIR = /home/didix21/GitHub/opensim_exoskeleton/exowithoutbody/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/exo.dir
+# Target rules for target CMakeFiles/pendulum.dir
 
 # All Build rule for target.
-CMakeFiles/exo.dir/all:
-	$(MAKE) -f CMakeFiles/exo.dir/build.make CMakeFiles/exo.dir/depend
-	$(MAKE) -f CMakeFiles/exo.dir/build.make CMakeFiles/exo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target exo"
-.PHONY : CMakeFiles/exo.dir/all
+CMakeFiles/pendulum.dir/all:
+	$(MAKE) -f CMakeFiles/pendulum.dir/build.make CMakeFiles/pendulum.dir/depend
+	$(MAKE) -f CMakeFiles/pendulum.dir/build.make CMakeFiles/pendulum.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/didix21/GitHub/opensim_exoskeleton/exowithoutbody/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target pendulum"
+.PHONY : CMakeFiles/pendulum.dir/all
 
 # Include target in all.
-all: CMakeFiles/exo.dir/all
+all: CMakeFiles/pendulum.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/exo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/build/CMakeFiles 0
-.PHONY : CMakeFiles/exo.dir/rule
+CMakeFiles/pendulum.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/didix21/GitHub/opensim_exoskeleton/exowithoutbody/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pendulum.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/didix21/GitHub/opensim_exoskeleton/exowithoutbody/build/CMakeFiles 0
+.PHONY : CMakeFiles/pendulum.dir/rule
 
 # Convenience name for target.
-exo: CMakeFiles/exo.dir/rule
+pendulum: CMakeFiles/pendulum.dir/rule
 
-.PHONY : exo
-
-# clean rule for target.
-CMakeFiles/exo.dir/clean:
-	$(MAKE) -f CMakeFiles/exo.dir/build.make CMakeFiles/exo.dir/clean
-.PHONY : CMakeFiles/exo.dir/clean
+.PHONY : pendulum
 
 # clean rule for target.
-clean: CMakeFiles/exo.dir/clean
+CMakeFiles/pendulum.dir/clean:
+	$(MAKE) -f CMakeFiles/pendulum.dir/build.make CMakeFiles/pendulum.dir/clean
+.PHONY : CMakeFiles/pendulum.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pendulum.dir/clean
 
 .PHONY : clean
 
