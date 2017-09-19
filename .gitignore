@@ -4,6 +4,7 @@
 
 # Compilation files .../build/:
 build/CMakeFiles/
+*.cmake
 *.txt.user
 *.txt~
 *.csv
