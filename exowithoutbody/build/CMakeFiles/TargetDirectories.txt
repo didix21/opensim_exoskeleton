@@ -1,0 +1,3 @@
+/home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/build/CMakeFiles/edit_cache.dir
+/home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/build/CMakeFiles/rebuild_cache.dir
+/home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/build/CMakeFiles/exo.dir
