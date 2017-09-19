@@ -5,6 +5,9 @@
 # General path
 CMakeFiles/
 
+# Ignore a spific type of files of a specifc folder
+**/build/*.txt
+
 # General compilation files .../build/:
 *.cbp
 *.cmake
@@ -24,7 +27,6 @@ CMakeFiles/
 
 
 # Specific files
-CMakeCache.txt
 Makefile
 Makefile2
-DataToPlot.txt
+
