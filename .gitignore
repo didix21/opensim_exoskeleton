@@ -2,11 +2,18 @@
 # Ignore target from build
 
 
-# Compilation files .../build/:
-build/CMakeFiles/
+# General path
+build/CMakeFiles
+
+# General compilation files .../build/:
+*.cbp
 *.cmake
-*.txt.user
-*.txt~
 *.csv
 *.log
+*.txt.user
+*.txt~
 
+
+
+# Specific files
+build/CMakeCache.txt
