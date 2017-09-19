@@ -178,7 +178,7 @@ NameSpace:STRING=
 OPENSIM_INSTALL_DIR:PATH=/home/didix21/OpenSim-3.3
 
 //STRING
-TARGET:STRING=exo
+TARGET:STRING=pendulum
 
 //Value Computed by CMake
 controlPendulum_BINARY_DIR:STATIC=/home/didix21/GitHub/opensim_exoskeleton/exowithoutbody/build
