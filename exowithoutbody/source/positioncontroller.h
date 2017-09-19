@@ -32,7 +32,7 @@ public:
                                     SimTK::Vec3 finalPoint,
                                     SimTK::Vec3* vectorResult) const;
         double getVectorModule(SimTK::Vec3 &vector) const;
-        double generateTrajectory(const SimTK::State &s, double initPos,
+        double* generateTrajectory(const SimTK::State &s, double initPos,
                                   double finalPos, double finalTime) const;
         double computeDesiredAngularAccelerationHipJoint(const SimTK::State &s,
                                                          double* getErr,
