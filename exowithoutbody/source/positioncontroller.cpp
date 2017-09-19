@@ -34,22 +34,21 @@ double PositionController::getVectorModule(SimTK::Vec3& vector) const
     return module;
 }
 
-//double PositionController::computeDesiredAngularAccelerationHipJoint(const State &s) const
-//{
-//    // Obtain the coordinateset of the joint desired
-//    const Coordinate& coord = _model->getCoordinateSet().get("exoHipJoint_coord");
-//    double xt = coord.getValue(s); // Actual angle x(t)
-//    static double xt1 = 0; // Angle position one previous step x(t-1)
-//    static double errt1 = 0;
-//    double iX = (xt + xt1)*0.033; // Compute integration
-//    double dx = (xt-xt1)/0.033; // Compute the derivative of xt
-//    xt1 = xt; // save the actual value of xt to compute the derivative
-//    double err = hipJointRefAngle - xt; // Error
-//    cout << "Error ExoHipJoint = " << err << endl;
-//    double  kp = k_exohip[0], kv = k_exohip[1], ki = k_exohip[2];
-//    double desAcc = kp*err - kv*dx + ki*iX;
-//    return desAcc;
-//}
+double PositionController::generateTrajectory(const SimTK::State &s,
+                                              double initPos,
+                                              double finalPos,
+                                              double finalTime) const
+{
+    double time = s.getTime(), theta_o = initPos,
+            theta_f = finalPos, tf = finalTime;
+
+    double a0 = theta_o,
+           a1 = 0,
+           a2 = 3/pow(tf,2)*(theta_f - theta_o),
+           a3 = -2/pow(tf,3)*(theta_f - theta_o);
+    double theta = a0 + a1*time + a2*pow(time,2) + a3*pow(time,3);
+    return theta;
+}
 
 
 double PositionController::computeDesiredAngularAccelerationHipJoint(const State &s,
@@ -73,21 +72,6 @@ double PositionController::computeDesiredAngularAccelerationHipJoint(const State
 }
 
 
-//double PositionController::computeDesiredAngularAccelerationKneeJoint(const State &s) const
-//{
-//    const Coordinate& coord = _model->getCoordinateSet().get("kneeJoint_r_coord");
-//    double xt = coord.getValue(s);
-//    static double xt1 = 0;
-//    double iX = (xt + xt1)*0.033;
-//    double dx = (xt - xt1)/0.033;
-//    xt1 = xt;
-//    double err = kneeJointRefAngle - xt;
-
-//    double  kp = k_exoknee[0], kv = k_exoknee[1], ki = k_exoknee[2];
-//    double desAcc = kp*err - kv*dx + ki*iX;
-//    cout << "Error ExoKneeJoint = " << err << endl;
-//    return desAcc;
-//}
 
 double PositionController::computeDesiredAngularAccelerationKneeJoint(const State &s,
                                                                       double* getErr = nullptr,
@@ -109,20 +93,6 @@ double PositionController::computeDesiredAngularAccelerationKneeJoint(const Stat
 }
 
 
-//double PositionController::computeDesiredAngularAccelerationAnkleJoint(const State &s) const
-//{
-//    const Coordinate& coord = _model->getCoordinateSet().get("ankleJoint_r_coord");
-//    double xt = coord.getValue(s);
-//    static double xt1 = 0;
-//    double iX = (xt + xt1)*0.033;
-//    double dx = (xt - xt1)/0.033;
-//    xt1 = xt;
-//    double err = ankleJointRefAngle - xt;
-//    double  kp = k_exoankle[0], kv = k_exoankle[1], ki = k_exoankle[2];
-//    double desAcc = kp*err - kv*dx + ki*iX;
-//    cout << "Error ExoAnkleJoint = " << err << endl;
-//    return desAcc;
-//}
 
 double PositionController::computeDesiredAngularAccelerationAnkleJoint(const State &s,
                                                                        double* getErr = nullptr,
