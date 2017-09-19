@@ -1,0 +1,4 @@
+# This file contain all the folders and foles that are not needed to be uploaded
+# Ignore target from build
+build/
+*.txt.user
