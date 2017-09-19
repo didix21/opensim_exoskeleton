@@ -24,7 +24,7 @@ CMakeFiles/
 
 
 # Specific files
-build/*.txt
 CMakeCache.txt
 Makefile
 Makefile2
+DataToPlot.txt
