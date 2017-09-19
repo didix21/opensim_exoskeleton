@@ -3,7 +3,7 @@
 
 
 # General path
-build/CMakeFiles/
+CMakeFiles/
 
 # General compilation files .../build/:
 *.cbp
@@ -13,9 +13,17 @@ build/CMakeFiles/
 *.txt.user
 *.txt~
 *.make
+*.marks
+*.bin
+*.c
+*.cxx
+*.o
+*check_cache
+*.out
 
 
 
 # Specific files
 CMakeCache.txt
 Makefile
+Makefile2
