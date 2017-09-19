@@ -1,0 +1,3 @@
+/home/didix21/GitHub/opensim_exoskeleton/exoskeleton/build/CMakeFiles/edit_cache.dir
+/home/didix21/GitHub/opensim_exoskeleton/exoskeleton/build/CMakeFiles/rebuild_cache.dir
+/home/didix21/GitHub/opensim_exoskeleton/exoskeleton/build/CMakeFiles/exoskeleton.dir
