@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.3.1, 2017-09-09T22:59:36. -->
+<!-- Written by QtCreator 4.3.1, 2017-09-19T16:27:38. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -406,7 +406,7 @@
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguation.Title">exo</value>
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.Arguments"></value>
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory"></value>
-    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory.default">/home/didix21/OpenSim/UbuntuWorkspace/exowithoutbody/build</value>
+    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory.default">/tmp/QtCreator-4yCqxr/qtc-cmake-XXfIoTJR</value>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">exo (disabled)</value>
