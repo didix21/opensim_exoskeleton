@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-    double initTime = 0.0, finalTime = 60.0;
+    double initTime = 0.0, finalTime = 15.0;
     Model osimModel;
     osimModel.setName("exowithoutbody");
 
