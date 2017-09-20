@@ -131,6 +131,7 @@
 /////////////////
 
 #define ENABLE_CONTROLLER // Enable controller
+#define ENABLE_CONTROLLER_BY_TRAJECTORIES_GENERATION // Enable tragectories geen
 
 // Set control parameter values
 #define KP_EXOHIP 1.25
