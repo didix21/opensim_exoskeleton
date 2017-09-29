@@ -83,6 +83,9 @@ int main()
     Manager manager(osimModel, integrator);
     manager.setInitialTime(initTime); manager.setFinalTime(finalTime);
     manager.integrate(si);
+    // Save the simulation results
+    osimModel.printControlStorage("exoskeleton_control.sto");
+    manager.getStateStorage().print("exoskeleton_states.sto");
 
     return 0;
 }
