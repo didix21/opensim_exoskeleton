@@ -12,10 +12,15 @@ In this repository you will find an double pendulum example created in OpenSim, 
 
 ### Double Pendulum
 
+![doublependulum](readmefiles/gift/doublependulum.gif)
+
 ### H1 Exoskeleton
+
+![h1exogift](readmefiles/gift/h1exo.gif)
 
 ### H1 Exoskeleton coupled to leg6dof9musc OpenSim model
 
+![h1exocoupled](readmefiles/gift/h1exocoupled.gif)
 
 ## Prerequisits
 
@@ -26,7 +31,7 @@ In order to build Simbody & OpenSim from source, follow the instructions that yo
 
 Both libraries have to be builded with **C++11** option.
 
-![cmakesimbody]("readmefiles/images/cmakesimbody.png")
+![cmakesimbody](readmefiles/images/cmakesimbody.png)
 
 
 ### 
