@@ -24,9 +24,9 @@ In this repository you will find an double pendulum example created in OpenSim, 
 
 In order to build Simbody & OpenSim from source, follow the instructions that you can find [here](https://simtk-confluence.stanford.edu/display/OpenSim/Building+OpenSim+from+Source).
 
-Both libraries has to be builded with **C++11** option.
+Both libraries have to be builded with **C++11** option.
 
-<img align="center" src="readmefiles/images/cmakesimbody.png"/>
+![cmakesimbody]("readmefiles/images/cmakesimbody.png")
 
 
 ### 
