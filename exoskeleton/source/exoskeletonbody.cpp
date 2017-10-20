@@ -331,73 +331,73 @@ void ExoskeletonBody::defineBushingForces(OpenSim::Set<OpenSim::Force>* bushingF
 
 #ifdef ENABLE_EXOTHIGH
 
-//    Vec3 thighLoc1(0.005, -0.4, 0.065), thighOrient(0),
-//                    exoThighLoc1(0.025, 0.084, -0.04), exoThighOrient(0);
-//    BushingForce thighBushingForce1 ("femur_r",
-//                                   thighLoc1,
-//                                   thighOrient,
-//                                   "rThigh",
-//                                   exoThighLoc1,
-//                                   exoThighOrient,
-//                                   transStiffness,
-//                                   rotStiffness,
-//                                   transDamping,
-//                                   rotDamping);
-//    thighBushingForce1.setName("thighBushingForce1");
+    Vec3 thighLoc1(0.005, -0.4, 0.065), thighOrient(0),
+                    exoThighLoc1(0.025, 0.084, -0.04), exoThighOrient(0);
+    BushingForce thighBushingForce1 ("femur_r",
+                                   thighLoc1,
+                                   thighOrient,
+                                   "rThigh",
+                                   exoThighLoc1,
+                                   exoThighOrient,
+                                   transStiffness,
+                                   rotStiffness,
+                                   transDamping,
+                                   rotDamping);
+    thighBushingForce1.setName("thighBushingForce1");
 
-//    Vec3 thighLoc2(0.005, -0.05, 0.065), exoThighLoc2(0.064, 0.431, -0.0345);
-//    BushingForce thighBushingForce2 ("femur_r",
-//                                   thighLoc2,
-//                                   thighOrient,
-//                                   "rThigh",
-//                                   exoThighLoc2,
-//                                   exoThighOrient,
-//                                   transStiffness,
-//                                   rotStiffness,
-//                                   transDamping,
-//                                   rotDamping);
-//    thighBushingForce2.setName("thighBushingForce2");
+    Vec3 thighLoc2(0.005, -0.05, 0.065), exoThighLoc2(0.064, 0.431, -0.0345);
+    BushingForce thighBushingForce2 ("femur_r",
+                                   thighLoc2,
+                                   thighOrient,
+                                   "rThigh",
+                                   exoThighLoc2,
+                                   exoThighOrient,
+                                   transStiffness,
+                                   rotStiffness,
+                                   transDamping,
+                                   rotDamping);
+    thighBushingForce2.setName("thighBushingForce2");
 
-//    bushingForces->insert(bushingForces->getSize(),thighBushingForce1);
-//    bushingForces->insert(bushingForces->getSize(),thighBushingForce2);
+    bushingForces->insert(bushingForces->getSize(),thighBushingForce1);
+    bushingForces->insert(bushingForces->getSize(),thighBushingForce2);
 
-//    osimModel->addForce(&bushingForces->get("thighBushingForce1"));
-//    osimModel->addForce(&bushingForces->get("thighBushingForce2"));
+    osimModel->addForce(&bushingForces->get("thighBushingForce1"));
+    osimModel->addForce(&bushingForces->get("thighBushingForce2"));
 
 #ifdef ENABLE_EXOHIP
 
-//    Vec3 pelvisLoc1(-0.1, 0.03, 0.12), exoHipLoc1(-0.034, 0.108, -0.059),
-//		pelvisOr(0), exoHipOr(0);
-//    BushingForce hipBushingForce1("pelvis",
-//                                  pelvisLoc1,
-//                                  pelvisOr,
-//                                  "exoHip",
-//                                  exoHipLoc1,
-//                                  exoHipOr,
-//                                  transStiffness,
-//                                  rotStiffness,
-//                                  transDamping,
-//                                  rotDamping);
-//    hipBushingForce1.setName("hipBushingForce1");
+    Vec3 pelvisLoc1(-0.1, 0.03, 0.12), exoHipLoc1(-0.034, 0.108, -0.059),
+        pelvisOr(0), exoHipOr(0);
+    BushingForce hipBushingForce1("pelvis",
+                                  pelvisLoc1,
+                                  pelvisOr,
+                                  "exoHip",
+                                  exoHipLoc1,
+                                  exoHipOr,
+                                  transStiffness,
+                                  rotStiffness,
+                                  transDamping,
+                                  rotDamping);
+    hipBushingForce1.setName("hipBushingForce1");
 
-//    Vec3 pelvisLoc2(-0.08, 0.02, -0.1), exoHipLoc2(-0.034, 0.108, -0.28);
-//    BushingForce hipBushingForce2 ("pelvis",
-//                                   pelvisLoc2,
-//                                   pelvisOr,
-//                                   "exoHip",
-//                                   exoHipLoc1,
-//                                   exoHipOr,
-//                                   transStiffness,
-//                                   rotStiffness,
-//                                   transDamping,
-//                                   rotDamping);
-//    hipBushingForce2.setName("hipBushingForce2");
+    Vec3 pelvisLoc2(-0.08, 0.02, -0.1), exoHipLoc2(-0.034, 0.108, -0.28);
+    BushingForce hipBushingForce2 ("pelvis",
+                                   pelvisLoc2,
+                                   pelvisOr,
+                                   "exoHip",
+                                   exoHipLoc1,
+                                   exoHipOr,
+                                   transStiffness,
+                                   rotStiffness,
+                                   transDamping,
+                                   rotDamping);
+    hipBushingForce2.setName("hipBushingForce2");
 
-//    bushingForces->insert(bushingForces->getSize(),hipBushingForce1);
-//    bushingForces->insert(bushingForces->getSize(),hipBushingForce2);
+    bushingForces->insert(bushingForces->getSize(),hipBushingForce1);
+    bushingForces->insert(bushingForces->getSize(),hipBushingForce2);
 
-//    osimModel->addForce(&bushingForces->get("hipBushingForce1"));
-   // osimModel->addForce(&bushingForces->get("hipBushingForce2"));
+    osimModel->addForce(&bushingForces->get("hipBushingForce1"));
+ //   osimModel->addForce(&bushingForces->get("hipBushingForce2"));
 
 #endif // ENABLE_EXOHIP
 

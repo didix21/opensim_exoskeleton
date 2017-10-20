@@ -74,9 +74,9 @@
     #define KV_EXOKNEE 40.0
     #define KI_EXOKNEE 120.0
 
-    #define KP_EXOANKLE 5.0
-    #define KV_EXOANKLE 10.0
-    #define KI_EXOANKLE 10.0
+    #define KP_EXOANKLE 1.0
+    #define KV_EXOANKLE 1.0
+    #define KI_EXOANKLE 5.0
 
     #define K_EXOHIP {KP_EXOHIP,KV_EXOHIP,KI_EXOANKLE}
     #define K_EXOKNEE {KP_EXOKNEE,KV_EXOKNEE, KI_EXOKNEE}

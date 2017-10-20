@@ -52,7 +52,7 @@ double PositionController::computeDesiredAngularAccelerationHipJoint(const State
     errt1 = err;
     if(getErr != nullptr)
         *getErr = err;
-    // cout << "Error ExoHipJoint = " << err << endl;
+    cout << "Error ExoHipJoint = " << err << endl;
     double  kp = k_exohip[0], kv = k_exohip[1], ki = k_exohip[2];
     double desAcc = kp*err + kv*dErr + ki*iErr;
     return desAcc;
@@ -74,7 +74,7 @@ double PositionController::computeDesiredAngularAccelerationKneeJoint(const Stat
     errt1 = err;
     if(getErr != nullptr)
         *getErr = err;
-    //cout << "Error ExoKneeJoint = " << err << endl;
+    cout << "Error ExoKneeJoint = " << err << endl;
     double  kp = k_exoknee[0], kv = k_exoknee[1], ki = k_exoknee[2];
     double desAcc = kp*err + kv*dErr + ki*iErr;
     return desAcc;
@@ -97,7 +97,8 @@ double PositionController::computeDesiredAngularAccelerationAnkleJoint(const Sta
      errt1 = err;
      if(getErr != nullptr)
          *getErr = err;
-     // cout << "Error ExoAnkleJoint = " << err << endl;
+     cout << "Error ExoAnkleJoint = " << err << endl;
+     cout << "---------------------------------------" << endl;
      double  kp = k_exoankle[0], kv = k_exoankle[1], ki = k_exoankle[2];
      double desAcc = kp*err + kv*dErr + ki*iErr;
      return desAcc;
@@ -186,11 +187,11 @@ void PositionController::computeControls(const SimTK::State& s, SimTK::Vector &c
    // Print all data to file
    static PrintToFile printFile("DataToPlot.csv");
    printFile.PrintDataToFile(nameData, dataToPrint);
-   Vector torqueControl(1, 0.0);
+   Vector torqueControl(1, nTorqueExoHip);
    _model->updActuators().get("exoHipActuator_r").addInControls(torqueControl, controls);
-   Vector torqueControl2(1, 0.0);
+   Vector torqueControl2(1, nTorqueExoKnee);
    _model->updActuators().get("exoKneeActuator_r").addInControls(torqueControl2, controls);
-   Vector torqueControl3(1, 0.0);
+   Vector torqueControl3(1, -nTorqueExoAnkle);
    _model->updActuators().get("exoAnkleActuator_r").addInControls(torqueControl3, controls);
 }
 
