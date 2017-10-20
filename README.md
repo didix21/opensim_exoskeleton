@@ -41,15 +41,16 @@ Here you are going to find the description of the different steps to compile one
 
  1. Clone the repository:
  
-   $ git clone https://github.com/didix21/opensim_exoskeleton.git opensim_exo
+            $ git clone https://github.com/didix21/opensim_exoskeleton.git opensim_exo
   
  2. Use Cmake to compile the projects
   * Select the source folder and the build folder.
   * Click on Configure button.
   * Select Advanced options and write the following.
   
-     'CMAKE_BUILD_TYPE RelWithDebInfo'
-     'CMAKE_C_FLAGS -std=++11 -gnu=++11'
+     `CMAKE_BUILD_TYPE RelWithDebInfo`
+     
+     `CMAKE_C_FLAGS -std=++11 -gnu=++11`
      
   * Click on Configure button, once again.
   * Click on Generate button.
