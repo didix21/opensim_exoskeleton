@@ -2,7 +2,7 @@
 
 This repository aims to make use of OpenSim API and Simbody API, two C++ libraries in order to prove the feasibility of coupling and simulating the H1 exoskeleton model with a musculoskeletal model already created in OpenSim. The following images show the H1 Exoskeleton and the OpenSim model:
 
-<img src="readmefiles/images/h1exo.png"/ alt="H1 Exoskeleton" title"h1exo" height="60">
+<img src="readmefiles/images/h1exo.png" alt="H1 Exoskeleton" title"h1exo" height="60">
  
 
 ## Description
