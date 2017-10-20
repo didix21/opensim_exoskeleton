@@ -26,5 +26,7 @@ In order to build Simbody & OpenSim from source, follow the instructions that yo
 
 Both libraries has to be builded with **C++11** option.
 
+<img align="center" src="readmefiles/images/cmakesimbody.png"/>
+
 
 ### 
